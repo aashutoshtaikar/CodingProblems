@@ -1,8 +1,12 @@
-# Ignore everything in repository root 
-/*
+# Folder to not ignore
+!/src/
 
 # Files to not ignore
 !/.gitignore
 
-# Folder to not ignore
-!/src/
+# Ignore everything in repository root 
+/*
+
+
+
+
