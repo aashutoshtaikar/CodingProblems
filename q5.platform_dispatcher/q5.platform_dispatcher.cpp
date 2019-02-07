@@ -74,7 +74,7 @@ auto for_equals_function =
 )";
 
 // Bonus Question: why did I type cast this?
-/*This function prototype was typecasted to act as a function Adapter between the command dispatcher and the Controller
+/*This function pointer was typecasted to act as a function Adapter between the command dispatcher and the Controller
  *  being the commonly used function which accepts the rapidjson Value object*/
 typedef std::function<bool(rapidjson::Value &)> CommandHandler;
 
