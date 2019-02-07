@@ -1,6 +1,8 @@
 # Ignore everything
 *
 
+/Debug
+
 # But descend into directories
 !*/
 
