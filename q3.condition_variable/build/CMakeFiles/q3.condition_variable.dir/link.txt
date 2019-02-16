@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/q3.condition_variable.dir/q3.condition_variable.cpp.o  -o q3.condition_variable -lpthread 
