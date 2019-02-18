@@ -176,8 +176,6 @@ public:
 };
 
 class CommandDispatcher {
-private:
-	std::map<std::string, CommandHandler> *command_handlers_;
 
 public:
 	CommandDispatcher() {
@@ -185,11 +183,11 @@ public:
 		//command_handlers_.clear();
 	}
 
-	~CommandDispatcher() {
+		virtual ~CommandDispatcher() {
 		delete command_handlers_;
 
 		// question why is it virtual? Is it needed in this case?
-		//no, it is not needed in this case as there are is no derived class, thus no polymorphism.
+		//No, it is not needed in this case, however, if in future some class is derived from this class it is better to have a virtual destructor for proper runtime polymorphism.
 	}
 
 	bool addCommandHandler(std::string command, CommandHandler handler) {
@@ -226,12 +224,15 @@ public:
 
 	// Question: why delete these?
 	/*Deleting is to avoid the usage of copy constructor and copy assignment operator.
-	 If not deleted we must explicitly define its function to copy/move another object.
+	 If not deleted we must explicitly define its function to copy another object.
 	 */
 
 	// delete unused constructors
 	CommandDispatcher(const CommandDispatcher&) = delete;
 	CommandDispatcher& operator=(const CommandDispatcher&) = delete;
+
+	private:
+	std::map<std::string, CommandHandler> *command_handlers_;
 
 };
 

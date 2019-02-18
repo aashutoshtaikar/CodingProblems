@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/batman/Documents/CodingProblems/q4.custom_lock_use/q1.custom_lock.h
+iostream
+-
+mutex
+-
+tuple
+-
+
+/home/batman/Documents/CodingProblems/q4.custom_lock_use/q4.custom_lock_use.cpp
+iostream
+-
+thread
+-
+mutex
+-
+q1.custom_lock.h
+/home/batman/Documents/CodingProblems/q4.custom_lock_use/q1.custom_lock.h
+

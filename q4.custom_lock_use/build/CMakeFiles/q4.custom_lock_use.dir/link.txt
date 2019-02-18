@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/q4.custom_lock_use.dir/q4.custom_lock_use.cpp.o  -o q4.custom_lock_use -lpthread 

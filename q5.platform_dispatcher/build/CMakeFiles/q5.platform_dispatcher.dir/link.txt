@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/q5.platform_dispatcher.dir/q5.platform_dispatcher.cpp.o  -o q5.platform_dispatcher 
