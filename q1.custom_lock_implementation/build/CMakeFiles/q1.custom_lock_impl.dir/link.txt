@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/q1.custom_lock_impl.dir/q1.main.cpp.o  -o q1.custom_lock_impl -lpthread 

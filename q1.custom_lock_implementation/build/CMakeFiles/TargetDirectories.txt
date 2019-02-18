@@ -1,3 +1,0 @@
-/home/batman/Documents/CodingProblems/q1.custom_lock_implementation/build/CMakeFiles/rebuild_cache.dir
-/home/batman/Documents/CodingProblems/q1.custom_lock_implementation/build/CMakeFiles/q1.custom_lock_impl.dir
-/home/batman/Documents/CodingProblems/q1.custom_lock_implementation/build/CMakeFiles/edit_cache.dir
