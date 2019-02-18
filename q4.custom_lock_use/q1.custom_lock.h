@@ -4,21 +4,36 @@
 */
 #include <iostream>
 #include<mutex>
+#include<tuple>
 
 namespace custom_locks {
 
-template<typename _Mutex_t>
-/*a simple scoped lock guard implementation*/
-class lock_guard {
-	_Mutex_t& m_mutex;
+template<typename... Mrest> class lock_guard;
 
+/*a simple scoped lock guard like implementation*/
+template <> class lock_guard<>{};
+
+template<typename _Mutex_t, typename... Mrest>
+/*a simple scoped lock guard like implementation*/
+class lock_guard<_Mutex_t,Mrest...>{
 public:
-	lock_guard(_Mutex_t& _m): m_mutex(_m){
-		m_mutex.lock();
+	void lock(_Mutex_t& _m){
+		_m.lock();
 	}
 
-	~lock_guard(){
-		m_mutex.unlock();
+	void lock(_Mutex_t& _m, Mrest&... next){
+		_m.lock();
+		lock(next...);
+	}
+
+
+	void unlock(_Mutex_t& _m){
+		_m.unlock();
+	}
+	
+	void unlock(_Mutex_t& _m, Mrest&... next){
+		_m.unlock();
+		unlock(next...);
 	}
 
 	//deleting unused constructors to avoid copy/move/assignment
@@ -27,6 +42,8 @@ public:
 	lock_guard(const lock_guard&&) = delete;
 	lock_guard& operator=(const lock_guard&&) = delete;
 };
+
+
 
 }
 
