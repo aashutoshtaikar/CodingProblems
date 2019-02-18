@@ -15,7 +15,6 @@ template <> class lock_guard<>{};
 
 template<typename _Mutex_t, typename... Mrest>
 class lock_guard<_Mutex_t,Mrest...>{
-	// std::tuple<Mrest...> m_mutex;
 public:
 	void lock(_Mutex_t& _m){
 		_m.lock();
