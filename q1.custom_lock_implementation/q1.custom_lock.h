@@ -3,48 +3,65 @@
       std::lock_guard
 */
 #include <iostream>
-#include<mutex>
-#include<tuple>
+#include <mutex>
 
 namespace custom_locks {
 
-template<typename... Mrest> class lock_guard;
+template <typename... Mrest>
+class lock_guard;
 
 /*a simple scoped lock guard like implementation*/
-template <> class lock_guard<>{};
+template <>
+class lock_guard<>
+{
+};
 
-template<typename _Mutex_t, typename... Mrest>
-class lock_guard<_Mutex_t,Mrest...>{
+template <typename _Mutex_t, typename... Mrest>
+class lock_guard<_Mutex_t, Mrest...>
+{
+	template <typename U, typename... Us>
+	void lock_this(U &&u, Us &&... rest)
+	{
+		u.lock();
+		lock_this(rest...);
+	}
+
+	template <typename U>
+	void lock_this(U &&u)
+	{
+		u.lock();
+	}
+
+	template <typename U, typename... Us>
+	void unlock_this(U &&u, Us &&... rest)
+	{
+		u.unlock();
+		unlock_this(rest...);
+	}
+
+	template <typename U>
+	void unlock_this(U &&u)
+	{
+		u.unlock();
+	}
 public:
-	void lock(_Mutex_t& _m){
-		_m.lock();
+	lock_guard(){}
+
+	void lock(_Mutex_t& _m, Mrest&... next)
+	{
+		lock_this(_m, next...);
 	}
 
-	void lock(_Mutex_t& _m, Mrest&... next){
-		_m.lock();
-		lock(next...);
-	}
-
-
-	void unlock(_Mutex_t& _m){
-		_m.unlock();
-	}
-	
-	void unlock(_Mutex_t& _m, Mrest&... next){
-		_m.unlock();
-		unlock(next...);
+	void unlock(_Mutex_t &_m, Mrest &... next)
+	{
+		unlock_this(_m, next...);
 	}
 
 	//deleting unused constructors to avoid copy/move/assignment
-	lock_guard(const lock_guard&) = delete;
-	lock_guard& operator=(const lock_guard&) = delete;
-	lock_guard(const lock_guard&&) = delete;
-	lock_guard& operator=(const lock_guard&&) = delete;
+	lock_guard(const lock_guard &) = delete;
+	lock_guard &operator=(const lock_guard &) = delete;
+	lock_guard(const lock_guard &&) = delete;
+	lock_guard &operator=(const lock_guard &&) = delete;
 };
 
-
-
 }
-
-
-

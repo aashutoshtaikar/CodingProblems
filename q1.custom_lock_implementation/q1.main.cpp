@@ -7,18 +7,19 @@
 #include "q1.custom_lock.h"
 
 
-std::mutex mtx;		//mutex1
-std::mutex mtx2;	//mutex2
+std::mutex mtx;		
+std::mutex mtx2;	
+std::mutex mtx3;	
 int sharedVar = 0;
 
 void foo(){
 	printf("starting thread %d \n", std::this_thread::get_id());
-	custom_locks::lock_guard<std::mutex,std::mutex> *lg;
-	lg->lock(mtx,mtx2);
+	custom_locks::lock_guard<std::mutex,std::mutex,std::mutex> lg;
+	lg.lock(mtx,mtx2,mtx3);
 	sharedVar++;
 	std::this_thread::sleep_for(std::chrono::seconds(1));
 	printf("running locked section from thread:%d, sharedVar:%d  \n", std::this_thread::get_id(), sharedVar);
-	lg->unlock(mtx,mtx2);
+	lg.unlock(mtx,mtx2,mtx3);
 }
 
 
