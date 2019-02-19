@@ -2,8 +2,6 @@
       to allow you to call your class impl "lock_guard" and not conflict with
       std::lock_guard
 */
-#include <iostream>
-#include <mutex>
 
 namespace custom_locks {
 
