@@ -17,7 +17,7 @@ int sharedVar = 0;
 
 void foo(){
 	printf("doing some work from thread1 %d, shared var:%d \n", std::this_thread::get_id(), sharedVar);
-	std::this_thread::sleep_for(std::chrono::seconds(1));	//set speed here to check race conditions
+	std::this_thread::sleep_for(std::chrono::milliseconds(50));	//set speed here to check race conditions
 
 	custom_locks::lock_guard<std::mutex,std::mutex,std::mutex> lg_1;
 	lg_1.lock(mtx,mtx2,mtx3);
@@ -29,7 +29,7 @@ void foo(){
 
 void bar(){
 	printf("doing some work from thread2 %d, shared var:%d \n", std::this_thread::get_id(), sharedVar);
-	std::this_thread::sleep_for(std::chrono::seconds(1));	//set speed here to check race conditions
+	std::this_thread::sleep_for(std::chrono::milliseconds(250));	//set speed here to check race conditions
 
 	custom_locks::lock_guard<std::mutex,std::mutex,std::mutex> lg_1;
 	lg_1.lock(mtx,mtx2,mtx3);
@@ -41,7 +41,7 @@ void bar(){
 
 void baz(){
 	printf("doing some work from thread3 %d, shared var:%d \n", std::this_thread::get_id(), sharedVar);
-	std::this_thread::sleep_for(std::chrono::seconds(1));	//set speed here to check race conditions
+	std::this_thread::sleep_for(std::chrono::milliseconds(500));	//set speed here to check race conditions
 
 	custom_locks::lock_guard<std::mutex,std::mutex,std::mutex> lg_1;
 	lg_1.lock(mtx,mtx2,mtx3);
