@@ -7,5 +7,5 @@ open terminal from respective folders
 change the script file mode as executable  
 >chmod +x build.sh
 
-//run the script  
+run the script  
 >./build.sh
