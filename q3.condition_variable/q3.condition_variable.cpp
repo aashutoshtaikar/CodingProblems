@@ -16,8 +16,8 @@
 
 std::mutex mtx;
 int lap_num = 0;
-
-void foo(auto_event &e, uint thread_num, std::string thread_name)
+ 
+void foo(trigger_event &e, uint thread_num, std::string thread_name)
 {
 	//perform other tasks -- independent of race condition --
 
@@ -29,6 +29,7 @@ void foo(auto_event &e, uint thread_num, std::string thread_name)
 
 	//shared common work to be performed
 	std::cout << thread_name << ":signal received, doing work ....\n";
+	if((thread_num+1)%3==0) lap_num++;
 	std::this_thread::sleep_for(std::chrono::milliseconds(500));
 	std::cout << thread_name << ":done with work, signal next thread \n";
 	std::this_thread::sleep_for(std::chrono::milliseconds(500));
@@ -41,9 +42,9 @@ int main()
 	while (1)
 	{
 		//main lock 1 -- 1) start: thread 1, thread 2, thread 3 --
-		auto_event e;
+		trigger_event e;
 
-		printf("main:starting all threads.\n");
+		std::cout<<"main:starting all threads.lap:"<<lap_num<<"\n";
 		std::thread thread1(foo, std::ref(e), 1, "thread1");
 		std::thread thread2(foo, std::ref(e), 2, "thread2");
 		std::thread thread3(foo, std::ref(e), 3, "thread3");

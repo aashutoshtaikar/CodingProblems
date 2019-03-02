@@ -1,9 +1,9 @@
 #include<mutex>
 #include<condition_variable>
 
-class auto_event{
+class trigger_event{
 public:
-    explicit auto_event():current_thread(0){}
+    explicit trigger_event():current_thread(0){}
 
     void wait(uint thread_num){
         std::unique_lock<std::mutex> lock(m_mutex);
