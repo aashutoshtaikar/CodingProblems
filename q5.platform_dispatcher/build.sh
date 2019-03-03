@@ -22,13 +22,13 @@ if [[ $input -eq 1 || $input -eq 3 ]]; then
 	 echo -e "\n${RED} ----building---- ${NC}\n"
 	 mkdir build && cd $_ && cmake ../ && make  
 	 echo -e "\n${RED} ----done building---- ${NC}\n"
-	 break;
     
        else 
          #break to run the program if it is build n run
     	 if [[ $input -eq 3 ]]; then 
-	   break; 
-	 else #if input is n or N
+	  : 
+	 #if input is n or N
+	 else 
      	   exit;
 	 fi
        fi

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 
-project(q1.custom_lock_impl)
+project(q1.custom_lock_implementation)
 
 find_package (Threads)
 
