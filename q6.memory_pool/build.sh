@@ -1,17 +1,54 @@
 #!/bin/bash
+#custom build script 
+#cmake build output will be in build directory
 
-if [ -d "build" ]; then
-   echo "Build directory already exist! Do you wish to rebuild?"
-     select yn in "Yes" "No"; do
-       case $yn in
-         Yes ) rm -rd build/; echo "deleted existing build directory"; break;;
-         No ) exit;;
-     esac
-   done
+RED='\033[0;31m'
+NC='\033[0m'
+
+echo -e "Menu options: \n 1. build \n 2. Run \n 3. Build and run\n"
+read input
+
+if [[ $input -eq 1 || $input -eq 3 ]]; then
+  if [ -d "build" ]; then
+     echo -e "${RED}Build directory already exist!${NC} Do you wish to rebuild?[y/n]"
+     read b_input     
+       if [[ "$b_input" == "y" || "$b_input" == "Y" ]]; then
+	 
+	 #remove existing build dir
+	 rm -rd build/
+	 echo "deleted existing build directory" 
+ 	 
+	 #create a build directory and cmake and make
+	 echo -e "\n${RED} ----building---- ${NC}\n"
+	 mkdir build && cd $_ && cmake ../ && make  
+	 echo -e "\n${RED} ----done building---- ${NC}\n"
+	 break;
+    
+       else 
+         #break to run the program if it is build n run
+    	 if [[ $input -eq 3 ]]; then 
+	   break; 
+	 else #if input is n or N
+     	   exit;
+	 fi
+       fi
+  fi
+  
 fi
 
-echo "building...."
-#create a build directory and cmake and make
-mkdir build && cd $_ && cmake ../ && make
+
+if [[ $input -eq 2 || $input -eq 3 ]]; then
+
+  #check if current directory is build and go back if true
+  if [[ ${PWD##*/} == build ]]; then
+    cd ..
+  fi
+    
+  echo -e "${RED}\n ----Running ${PWD##*/}---- \n${NC}"
+  build/${PWD##*/}
+
+fi
+
+
 
 
