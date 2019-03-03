@@ -1,7 +1,7 @@
 # CodingProblems
 Coding problems on locks, multithreading, rapidjson, C memory management...
 
-# Usage:
+# Usage to run cmake build and make:
 open terminal from respective folders
 
 change the script file mode as executable  
@@ -9,3 +9,6 @@ change the script file mode as executable
 
 run the script  
 >./build.sh
+
+run the executable
+>./<project_name>
