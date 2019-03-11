@@ -12,18 +12,19 @@ if [[ $input -eq 1 || $input -eq 3 ]]; then
   if [ -d "build" ]; then
      echo -e "${RED}Build directory already exist!${NC} Do you wish to rebuild?[y/n]"
      read b_input     
-       if [[ "$b_input" == "y" || "$b_input" == "Y" ]]; then
-	 
+       if [[ "$b_input" == "y" || "$b_input" == "Y" ]]; then 
 	 #remove existing build dir
 	 rm -rd build/
 	 echo "deleted existing build directory" 
- 	 
+       else
+	exit;
+       fi 
+  fi
 	 #create a build directory and cmake and make
 	 echo -e "\n${RED} ----building---- ${NC}\n"
 	 mkdir build && cd $_ && cmake ../ && make  
 	 echo -e "\n${RED} ----done building---- ${NC}\n"
-    
-       else 
+
          #break to run the program if it is build n run
     	 if [[ $input -eq 3 ]]; then 
 	  : 
@@ -31,9 +32,6 @@ if [[ $input -eq 1 || $input -eq 3 ]]; then
 	 else 
      	   exit;
 	 fi
-       fi
-  fi
-  
 fi
 
 
