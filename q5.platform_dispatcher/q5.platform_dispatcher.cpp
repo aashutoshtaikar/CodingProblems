@@ -185,11 +185,12 @@ public:
 		//command_handlers_.clear();
 	}
 
-	~CommandDispatcher() {
+	virtual ~CommandDispatcher() {
 		delete command_handlers_;
 
 		// question why is it virtual? Is it needed in this case?
-		//no, it is not needed in this case as there are is no derived class, thus no polymorphism.
+		//no, it is not needed in this case as there are is no derived class, thus no polymorphism,
+		//however, in C++11 if the class is not declared as final, it is a good practice to have a virtual destructor if some class is  derived from it. 
 	}
 
 	bool addCommandHandler(std::string command, CommandHandler handler) {

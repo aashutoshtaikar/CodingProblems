@@ -57,4 +57,5 @@ int main()
 		e.signal();
 		printf("main:starting thread1.\n");
 	}
+	return 0;
 }

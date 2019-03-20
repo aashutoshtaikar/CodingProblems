@@ -64,4 +64,5 @@ while(true){
 
 	std::cout << "finished\n";
 	}
+	return 0;
 }

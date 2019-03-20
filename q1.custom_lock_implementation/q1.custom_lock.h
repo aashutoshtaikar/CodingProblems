@@ -9,10 +9,10 @@ template <typename... Mrest>
 class lock_guard;
 
 /*a simple scoped lock guard like implementation*/
-template <>
-class lock_guard<>
-{
-};
+// template <>
+// class lock_guard<>
+// {
+// };
 
 template <typename _Mutex_t, typename... Mrest>
 class lock_guard<_Mutex_t, Mrest...>
@@ -50,7 +50,7 @@ public:
 		lock_this(_m, next...);
 	}
 
-	void unlock(_Mutex_t &_m, Mrest &... next)
+	void unlock(_Mutex_t &_m, Mrest&... next)
 	{
 		unlock_this(_m, next...);
 	}
