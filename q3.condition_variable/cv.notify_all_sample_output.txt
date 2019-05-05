@@ -1,0 +1,505 @@
+main:starting all threads.lap:0
+thread1:Starting, waiting
+thread3:Starting, waiting
+thread2:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:1
+thread1:Starting, waiting
+thread3:Starting, waiting
+thread2:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:2
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:3
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:4
+thread1:Starting, waiting
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:5
+thread1:Starting, waiting
+thread2thread3:Starting, waiting
+:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:6
+thread1:Starting, waiting
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:7
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:8
+thread1:Starting, waiting
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:9
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:10
+thread1:Starting, waiting
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:11
+thread1:Starting, waiting
+thread3:Starting, waiting
+thread2:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:12
+thread1:Starting, waiting
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:13
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:14
+thread1:Starting, waiting
+thread3:Starting, waiting
+thread2:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:15
+thread1:Starting, waiting
+thread3:Starting, waiting
+thread2:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:16
+thread1:Starting, waiting
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:17
+thread1:Starting, waiting
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:18
+thread1:Starting, waiting
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:19
+thread2:Starting, waiting
+thread1:Starting, waiting
+thread3:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:20
+thread2:Starting, waiting
+thread1:Starting, waiting
+thread3:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:21
+thread1:Starting, waiting
+thread3:Starting, waiting
+thread2:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:22
+thread1:Starting, waiting
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:23
+thread1:Starting, waiting
+thread3:Starting, waiting
+thread2:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:24
+thread1:Starting, waiting
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:25
+thread1:Starting, waiting
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:26
+thread1:Starting, waiting
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:27
+thread1:Starting, waiting
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:28
+thread2:Starting, waiting
+thread1:Starting, waiting
+thread3:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:29
+thread2:Starting, waiting
+thread1:Starting, waiting
+thread3:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:30
+thread1:Starting, waiting
+thread3:Starting, waiting
+thread2:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:31
+thread1:Starting, waiting
+thread3:Starting, waiting
+thread2:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:32
+thread1:Starting, waiting
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:33
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:34
+thread1:Starting, waiting
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:35
+thread1:Starting, waiting
+thread3:Starting, waiting
+thread2:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:36
+thread1:Starting, waiting
+thread3:Starting, waiting
+thread2:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:37
+thread1:Starting, waiting
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:38
+thread1:Starting, waiting
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:39
+thread2:Starting, waiting
+thread1:Starting, waiting
+thread3:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:40
+thread1:Starting, waiting
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:41
+thread1:Starting, waiting
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:42
+thread1:Starting, waiting
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:43
+thread1:Starting, waiting
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:44
+thread1:Starting, waiting
+thread2:Starting, waiting
+thread3:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 
+main:starting thread1.
+main:starting all threads.lap:45
+thread1:Starting, waiting
+thread2thread3:Starting, waiting
+:Starting, waiting
+thread1:signal received, doing work ....
+thread1:done with work, signal next thread 
+thread2:signal received, doing work ....
+thread2:done with work, signal next thread 
+thread3:signal received, doing work ....
+thread3:done with work, signal next thread 

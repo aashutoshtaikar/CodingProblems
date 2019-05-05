@@ -116,6 +116,7 @@ bool memory_pool_destroy(memory_pool_t *mp)
     		tmp->magic = 0;
     		tmp->size = 0;
     		free(tmp);
+            tmp = NULL;
     	}
     	else break;
     }
@@ -125,11 +126,12 @@ bool memory_pool_destroy(memory_pool_t *mp)
     mp->pool->magic = 0;
     mp->pool->size = 0;
     free(mp->pool);
-
-    mp->available = 0;
-    mp->count = 0;
-    mp->block_size = 0;
+    mp->pool = NULL;
+    mp->available = NULL;
+    mp->count = NULL;
+    mp->block_size = NULL;
     free(mp);
+    mp = NULL;
 
     return true;
 }

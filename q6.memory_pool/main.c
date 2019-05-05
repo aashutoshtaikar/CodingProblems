@@ -29,6 +29,7 @@ int main(){
 
 	printf("Memory available %zu blocks\n",memory_pool_available(mem));
 
+	return 0;
 }
 
 
