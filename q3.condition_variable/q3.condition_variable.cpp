@@ -9,15 +9,19 @@
 */
 
 #include <iostream>
+#include <stdint.h>
 #include <thread>
 #include <mutex>
+#include <chrono>
+#include <string>
 #include <condition_variable>
+
 #include "Events.h"
 
 std::mutex mtx;
 int lap_num = 0;
 
-void foo(auto_event &e, uint thread_num, std::string thread_name)
+void foo(auto_event &e, unsigned int thread_num, std::string thread_name)
 {
 	//perform other tasks -- independent of race condition --
 

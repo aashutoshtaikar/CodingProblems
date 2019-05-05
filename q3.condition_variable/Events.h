@@ -5,7 +5,7 @@ class auto_event{
 public:
     explicit auto_event():current_thread(0){}
 
-    void wait(uint thread_num){
+    void wait(unsigned int thread_num){
         std::unique_lock<std::mutex> lock(m_mutex);
         m_cv.wait(lock,[&](){return thread_num == (current_thread+1);});  
     }
@@ -19,5 +19,5 @@ public:
 private:
     std::mutex m_mutex;
     std::condition_variable m_cv;
-    uint current_thread;
+    unsigned int current_thread;
 };
